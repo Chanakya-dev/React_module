@@ -31,22 +31,22 @@ import React from 'react';
 
 ## 6) Create APP Function in React  
 **Question:**  
-Create a functional component named 'APP' that displays 'Hello, React!' in an h1 tag.  
+Create a functional component named 'App' that displays 'Hello, React!' in an h1 tag.  
 
 **Answer:**  
 ```javascript
-function APP() {
+function App() {
   return (<h1>Hello, React!</h1>);
 }
 ```
 
 ## 7) React JSX Styling  
 **Question:**  
-Write the inline style attribute that applies text alignment and margin-top to the container.  
+Write the inline style attribute that applies text alignment and margin-top to the APP.  
 
 **Answer:**  
 ```javascript
-function Container() {
+function App() {
   return (
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
       // Content goes here
@@ -57,11 +57,11 @@ function Container() {
 
 ## 8) React Export Statement  
 **Question:**  
-Write the correct export statement to export the Container component from this file.  
+Write the correct export statement to export the App component from this file.  
 
 **Answer:**  
 ```javascript
-export default Container;
+export default App;
 ```
 
 ---
@@ -104,5 +104,3 @@ The `export default` statement allows you to export a single component, function
 - Import the necessary components and libraries.
 - Run the app using `npm start` or `yarn start`.
 ```
-
-This markdown file now properly numbers the questions from Day 1 and Day 2. Feel free to use this format! Let me know if you'd like any other modifications.
