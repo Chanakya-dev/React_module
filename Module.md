@@ -1,6 +1,4 @@
-Here's the content in `.md` format:
 
-```markdown
 # Day 1: React Basics
 
 ### 1) How to Create a React App named `movie`?
