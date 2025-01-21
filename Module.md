@@ -103,4 +103,4 @@ The `export default` statement allows you to export a single component, function
 - Place the code in the appropriate files (App.js and Home.js).
 - Import the necessary components and libraries.
 - Run the app using `npm start` or `yarn start`.
-```
+
