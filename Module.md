@@ -1,109 +1,77 @@
-```json
-{
-  "title": "React Programming Basics",
-  "description": "Master React through hands-on coding exercises",
-  "difficulty": "beginner",
-  "estimatedHours": 40,
-  "status": "active",
-  "tags": ["programming", "react", "frontend"],
-  "prerequisites": [],
-  "createdBy": "admin@example.com",
-  "createdAt": "{{datetime.now(UTC)}}",
-  "modules": [
-    {
-      "title": "Getting Started with React",
-      "description": "Learn the basics of React setup and components",
-      "order": 1,
-      "questions": [
-        {
-          "title": "React Import Statement",
-          "text": "Write the correct import statement to import React from the 'react' package.",
-          "type": "code",
-          "language": "javascript",
-          "difficulty": "easy",
-          "order": 1,
-          "code_starter": "// Write your import statement here",
-          "test_cases": [
-            {
-              "input": "import statement",
-              "expected": "import React from 'react';"
-            }
-          ],
-          "expected_solution": "import React from 'react';",
-          "expected_behavior": "Should correctly import React from the react package",
-          "evaluation_criteria": {
-            "functionality": "Import statement should be syntactically correct",
-            "efficiency": "Direct import statement",
-            "style": "Follow JavaScript conventions"
-          }
-        },
-        {
-          "title": "Create React Component",
-          "text": "Create a functional component named 'HelloWorld' that displays 'Hello, React!' in an h1 tag.",
-          "type": "code",
-          "language": "javascript",
-          "difficulty": "easy",
-          "order": 2,
-          "code_starter": "// Create your HelloWorld component here\nfunction HelloWorld() {\n  // Your code here\n}",
-          "test_cases": [
-            {
-              "input": "component render",
-              "expected": "<h1>Hello, React!</h1>"
-            }
-          ],
-          "expected_solution": "function HelloWorld() {\n  return <h1>Hello, React!</h1>;\n}",
-          "expected_behavior": "Component should render an h1 tag with 'Hello, React!'",
-          "evaluation_criteria": {
-            "functionality": "Component renders correct output",
-            "efficiency": "Simple implementation",
-            "style": "Follow React conventions"
-          }
-        }
-      ]
-    },
-    {
-      "title": "React State and Props",
-      "description": "Understanding component state and props",
-      "order": 2,
-      "questions": [
-        {
-          "title": "Understanding Props",
-          "text": "What are props in React?",
-          "type": "multiple_choice",
-          "difficulty": "easy",
-          "order": 1,
-          "options": [
-            "Internal component data that can change",
-            "Properties passed to a component from its parent",
-            "CSS properties for styling",
-            "JavaScript properties for event handling"
-          ],
-          "correct_answer": "Properties passed to a component from its parent"
-        },
-        {
-          "title": "Create Counter Component",
-          "text": "Create a Counter component that maintains a count state and displays it.",
-          "type": "code",
-          "language": "javascript",
-          "difficulty": "medium",
-          "order": 2,
-          "code_starter": "import React, { useState } from 'react';\n\nfunction Counter() {\n  // Your code here\n}",
-          "test_cases": [
-            {
-              "input": "initial render",
-              "expected": "Count: 0"
-            }
-          ],
-          "expected_solution": "import React, { useState } from 'react';\n\nfunction Counter() {\n  const [count, setCount] = useState(0);\n  return (\n    <div>\n      <p>Count: {count}</p>\n      <button onClick={() => setCount(count + 1)}>Increment</button>\n    </div>\n  );\n}",
-          "expected_behavior": "Component should display count and increment button",
-          "evaluation_criteria": {
-            "functionality": "Counter works correctly",
-            "efficiency": "Uses useState hook properly",
-            "style": "Follows React best practices"
-          }
-        }
-      ]
-    }
-  ]
+Here's the content in `.md` format:
+
+```markdown
+# Day 1: React Basics
+
+### 1) How to Create a React App named `movie`?
+**Answer:**  
+`npx create-react-app movie`
+
+---
+
+### 2) How to Install Modules/Packages in React?  
+**Answer:**  
+`npm install package`
+
+---
+
+### 3) What is meant by `Index.js` and how is it useful?  
+**Answer:**  
+`Index.js` is the entry point of a React project. It observes changes in the `App.js` file and updates the Virtual DOM accordingly.
+
+---
+
+### 4) Why Do We Need to Use `npm install <package-name>`?  
+**Answer:**  
+The `npm install <package-name>` command is used to add a specific Node.js package or library into your project for additional functionalities.
+
+---
+
+# Day 2: React Components and JSX
+
+### 1) How do you import a `HomePage` to `App.js` in React?  
+**Answer:**  
+```javascript
+import Home from './pages/Home';
+```
+
+---
+
+### 2) Prepare a Home Component and Return a Statement of "Hello World".  
+**Answer:**  
+```javascript
+function Home() {
+  return <div>Hello World</div>;
+}
+export default Home;
+```
+
+---
+
+### 3) How do you use JSX to render a child component inside a parent component?  
+**Answer:**  
+```javascript
+function App() {
+  return (
+    <Home />
+  );
 }
 ```
+
+---
+
+### 4) What is the purpose of the `export default` statement in React components?  
+**Answer:**  
+The `export default` statement allows you to export a single component, function, or value from a file, making it the default export. This enables importing it elsewhere without using curly braces.
+
+---
+
+### 5) What steps are needed to ensure this code runs in a React application?  
+**Answer:**  
+1. Create a React app using a tool like `create-react-app`.
+2. Place the code in the appropriate files (`App.js` and `Home.js`).
+3. Import the necessary components and libraries.
+4. Run the app using `npm start` or `yarn start`.
+```
+
+You can save this content in a file named `Day1_and_Day2_Questions.md`. Let me know if you'd like to add more sections!
